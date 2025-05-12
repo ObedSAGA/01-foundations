@@ -1,4 +1,6 @@
 ---
+import Navigation from "../components/Navigation.astro";
+
 
 const name = "Sobre Nosotros"
 const currentYear: number = new Date().getFullYear();
@@ -14,11 +16,7 @@ const currentYear: number = new Date().getFullYear();
 		<title>{name}</title>
 	</head>
 	<body>
-		<nav>
-			<a href="/">Home</a>
-			<a href="/about">About us</a>
-			<a href="/contact">Contact</a>
-		</nav>
+		<Navigation/>
 		<h1>{name}</h1>
 		<p>Fecha actual: {currentYear}</p>
 		<p>Momento actual: </p>
