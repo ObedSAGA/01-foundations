@@ -1,31 +1,9 @@
 ---
-import Navigation from "../components/Navigation.astro";
-
-
-const name = "Obed Sanchez"
-const currentYear: number = new Date().getFullYear();
-
+import MainLayout from "../layouts/MainLayout.astro";
 ---
 
-<html lang="es">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>{name}</title>
-	</head>
-	<body>
-		<Navigation />
-		<h1>{name}</h1>
-		<p>Fecha actual: {currentYear}</p>
-		<p>Momento actual: </p>
-		<p id="current-time">Momento only client: </p>
-		<footer>Año: 2023</footer>
-	<script>
-		
+<MainLayout>
 
+</MainLayout>
 
-	</script>
-	</body>
-</html>
+	
